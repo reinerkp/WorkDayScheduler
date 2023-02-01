@@ -31,22 +31,23 @@ $(document).ready(function() {
 
   //Add code to apply the past, present, or future class to each time block
     
-    $('.timeblock').each(function(){
-      var blockHour = parseInt($(this).attr('id'));
+    $('.time-block').each(function() {
+      var blockHour = parseInt($(this).attr('id').split('-')[1]);
+      
       if (currentTime > blockHour){
-        $(this).removeclass("future");
-        $(this).removeclass("present");
-        $(this).addclass("past");
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");
       }
       else if (currentTime === blockHour){
-        $(this).removeclass("past");
-        $(this).removeclass("future");
-        $(this).addclass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+        $(this).addClass("present");
       }
       else {
-        $(this).removeclass("past");
-        $(this).removeclass("present");
-        $(this).addclass("future");
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+        $(this).addClass("future");
       }   
 
     });
