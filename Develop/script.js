@@ -16,8 +16,6 @@ document.getElementById("currentDay").innerHTML = currentDate;
 $(document).ready(function() {
   
   // Event listener for when saveBtn is clicked
-  //document.getElementById("saveBtn").addEventListener("click", function() {
-  //$(".saveBtn").on("click", function() {
   $(document).on('click', '.saveBtn', function () {
 
     // Get the text of the attribute and the ID of the element
@@ -34,7 +32,7 @@ $(document).ready(function() {
   //Add code to apply the past, present, or future class to each time block
     
     $('.timeblock').each(function(){
-      var blockHour = parseInt($(this).attr('id').split('r')[1])
+      var blockHour = parseInt($(this).attr('id'));
       if (currentTime > blockHour){
         $(this).removeclass("future");
         $(this).removeclass("present");
