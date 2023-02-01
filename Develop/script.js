@@ -51,7 +51,7 @@ $(document).ready(function() {
         $(this).addclass("future");
       }
 
-      // Eetrieves value entered into local storage
+      // Retrieves value entered into local storage
       $("#hour-9 .description").val(localStorage.getItem("hour-9"));
       $("#hour-10 .description").val(localStorage.getItem("hour-10"));
       $("#hour-11 .description").val(localStorage.getItem("hour-11"));
