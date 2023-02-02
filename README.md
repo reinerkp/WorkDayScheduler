@@ -17,5 +17,5 @@ Collaborated with Johnny McGrown
 
 
 ## Link
-For open source projects, say how it is licensed.
+Here is the link to access the website! [reinerkp.github.io/WorkDayScheduler](https://reinerkp.github.io/WorkDayScheduler/)
 
