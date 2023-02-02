@@ -5,7 +5,8 @@ Use this scheduler to save events for each hour and get an up-to-date view of th
 
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Here is an Screenshot of the Work Day Scheduler!
+![Screenshot of work day scheduler.](./Develop/Workdayscheduler.png)
 
 
 ## Roadmap
