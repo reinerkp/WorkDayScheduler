@@ -8,7 +8,7 @@ var container = $(".container-fluid px-5")
 //date.text(moment().format('dddd MMMM Do'+ ", " +'YYYY'));
 //container.append(date);
 
-// TODO: Add code to display the current date in the header of the page. -->
+// Add code to display the current date in the header of the page. -->
 var currentDate = (dayjs().format('dddd, MMMM D'));
 document.getElementById("currentDay").innerHTML = currentDate;
 
@@ -29,11 +29,12 @@ $(document).ready(function() {
   $(function hourUpdater() {
     var currentTime = dayjs().hour()
 
-  //Add code to apply the past, present, or future class to each time block
-    
+
+    //Creat Fuction that splits the time from "hour-"
     $('.time-block').each(function() {
       var blockHour = parseInt($(this).attr('id').split('-')[1]);
-      
+
+  //Add code to apply the past, present, or future class to each time block
       if (currentTime > blockHour){
         $(this).removeClass("future");
         $(this).removeClass("present");
